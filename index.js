@@ -59,7 +59,6 @@ function makeTheGrid(rows, cols) {
                 if (grid[x][y] === false) {
                     grid[x][y] = true;
                     squaresFullyDarkenedNum.textContent = `${++squaresFullyDarkened}`;
-                    target.textContent = "Set";
                     target.classList.add("grid-cell");
                 }
             } else {
@@ -68,13 +67,7 @@ function makeTheGrid(rows, cols) {
         }
     })
 
-    gridContainer.addEventListener("mouseout", function(e){
-        function setDelay(){
-            e.target.style.backgroundColor = "#fff";
-        }
-
-        setTimeout(setDelay, 250);
-    })
+    
     squaresFullyDarkened = 0;
     squaresFullyDarkenedNum.textContent = `${squaresFullyDarkened}`;
 }
