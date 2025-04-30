@@ -24,9 +24,6 @@ main {
     cursor: pointer;
 }
 
-.color-change:hover {
-    background-color: skyblue;
-}
 
 section {
     display: flex;
