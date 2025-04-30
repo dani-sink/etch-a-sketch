@@ -50,3 +50,11 @@ section {
 #set-grid-btn:active {
     background-color: deepskyblue;
 }
+
+.grid-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%;
+    font-weight: bolder;
+}
