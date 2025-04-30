@@ -25,6 +25,7 @@ function makeTheGrid(rows, cols) {
             const gridCol = document.createElement('div');
             gridCol.style.width = `${cellWidth}px`;
             gridCol.style.height = `${cellWidth}px`;
+            gridCol.style.opacity = "0.1";
             gridCol.style.border = "2px solid #000";
             gridCol.classList.add("color-change");
             gridRow.appendChild(gridCol);
@@ -35,6 +36,7 @@ function makeTheGrid(rows, cols) {
         const target = e.target;
         if (target.tagName === "DIV") {
             target.style.backgroundColor = randomRGB();
+            target.style.opacity = `${+target.style.opacity + 0.1}`;
         }
     })
 
